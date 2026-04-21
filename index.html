@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selimsinacitesbih</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#0d0d0d;
+    color:white;
+}
+
+header {
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(180deg,#000,#1a1a1a);
+}
+
+header h1 {
+    font-size:32px;
+    letter-spacing:2px;
+}
+
+header p {
+    color:#ccc;
+}
+
+.btn {
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.section {
+    padding:30px 20px;
+}
+
+.section h2 {
+    margin-bottom:20px;
+    border-left:4px solid gold;
+    padding-left:10px;
+}
+
+.products {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.card {
+    background:#1a1a1a;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:scale(1.05);
+}
+
+.card img {
+    width:100%;
+    border-radius:8px;
+}
+
+.card button {
+    margin-top:10px;
+    padding:10px;
+    border:none;
+    background:gold;
+    color:black;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.trust {
+    background:#111;
+    text-align:center;
+    padding:25px;
+}
+
+.trust p {
+    margin:8px 0;
+    color:#ccc;
+}
+</style>
+
+<script>
+function siparis(urun) {
+    let numara = "905315991701";
+    let mesaj = encodeURIComponent(urun + " ürünü hakkında bilgi almak istiyorum.");
+    window.open("https://wa.me/" + numara + "?text=" + mesaj, "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>SELIMSINACITESBIH</h1>
+    <p>Koleksiyonluk & Usta İşi Tesbihler</p>
+    <a class="btn" href="#" onclick="siparis('Genel Sipariş')">WhatsApp’tan Sipariş Ver</a>
+</header>
+
+<div class="section">
+    <h2>Ağaç Tesbihler</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <p>Ağaç Tesbih Model 1</p>
+            <button onclick="siparis('Ağaç Tesbih Model 1')">Sipariş</button>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Sıkma Kehribar</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <p>Sıkma Kehribar Model 1</p>
+            <button onclick="siparis('Sıkma Kehribar Model 1')">Sipariş</button>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Ateş Kehribar</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <p>Ateş Kehribar Model 1</p>
+            <button onclick="siparis('Ateş Kehribar Model 1')">Sipariş</button>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Usta İşi & Koleksiyonluk</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://via.placeholder.com/200">
+            <p>Usta İşi Özel Model</p>
+            <button onclick="siparis('Usta İşi Özel Model')">Sipariş</button>
+        </div>
+    </div>
+</div>
+
+<div class="trust">
+    <h2>Güven</h2>
+    <p>✔ Sertifikalı Ürünler</p>
+    <p>✔ Usta İşçilik</p>
+    <p>✔ Koleksiyonluk Modeller</p>
+    <p>✔ Aynı Gün Kargo</p>
+    <p>✔ Canlı Mezat Satış</p>
+</div>
+
+</body>
+</html>
